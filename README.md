@@ -12,3 +12,14 @@ Step 2: The file will be sorted so that they are all unique and all websites wil
 
 Step 3: The sorted websites will be used to visualize. We are considering using d3js. This graph in particular where a website will be a higher node with host names as the lower node. http://mbostock.github.io/d3/talk/20111018/cluster.html
 
+How to use the tool?
+
+Step 1: Generate a PCAP file. Make sure all the .py files are in the same directory. If you are working with Linux, you will need to start apache and change some permissions in order to open the index.html file.  
+
+Step 2: Open step1.py, input the name of the pcap file in the tshark command. (An update to have a raw input will come soon)
+
+Step 3: Run step1.py. After that you will see that it creates a .csv file.
+
+Step 4: Run step2.py
+
+Step 5: Run step3.py. Now it creates a json file. Move the json file to the directory where the index.html exists. Open the index.html file and it will visualize the data
